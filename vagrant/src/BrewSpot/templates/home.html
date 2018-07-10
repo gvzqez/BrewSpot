@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The BrewSpot</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/static/home_style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+</head>
+
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">THE BREW SPOT</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            {% if 'username' in session %}
+                {% if session['local_name'] == 0 %}
+                    <li><a href="{{url_for('newLocal')}}"> SUBMIT YOUR LOCAL! </a></li>
+                {% else %}
+                    <li><a href="{{url_for('showLocal', local_name = session['local_name'])}}"> {{ session['local_name'] }} </a></li>
+                {% endif %}
+                <li><img src="{{session['picture']}}" style="width: 30px; margin-top: 10px;"></li>
+                <li><a href="{{url_for('gdisconnect')}}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+            {% else %}
+                <li><a href="{{url_for('showLogin')}}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Page Content -->
+<div class="main-header">
+    <div class="header-container">
+        <div class="header-title container">
+            <h1>Discover your favourite beers, in your local places.</h1>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="container main-container media-group">
+    <div class="row">
+        <h3>The Beers</h3>
+    </div>
+    <div class="text-center media-list">
+        <div class="icon arrow-icon">keyboard_arrow_left</div>
+        <div class="icon arrow-icon right">keyboard_arrow_right</div>
+        <div class="row">
+            {% for beer in beers %}
+            <div class="col-xs-6 col-sm-5 col-md-3 col-lg-2 media-tile text-center" style="background: white">
+                <a href="{{url_for('showBeer', beer_name = beer.name)}}">
+                    <img src="{{beer.logo}}">
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

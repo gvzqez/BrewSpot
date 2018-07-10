@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "udacity-backend-project-190516",
+  "private_key_id": "250d30a88e855e78bee5a6d23a93919b0e938b89",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCvcoSt9NkU6aha\n95ATEc6f/awmCP6dRxpF7VirxtXV0bY2lty9vxAWUdeT5AuOMdLiFxQqb6JfwDv4\nt3LmmEcP889plLbNQWO2LX+fstMlIH+YRzXidkfntunOQW3w2M0Hk62O+uPmRAFM\n3igRgOqgNhFSESSqyuzZRVCBJQEPQ3+UUolgFibw+JG5YD1zefh+lHgFGMaNeKdN\nZiGqJHBvY29ASBaY9G+BonqekpEZneKXNZLFc3rTAq9csy1q0bRrX//35eQY8piA\noZVjo+66z/7m25Ah40IbAGlzDsSSnoh5bJIZS8tklQ/H/3nCUdxW+dWcOA3oLHj0\nKsUEquBnAgMBAAECggEAJXiS58hMeM/ymgMXrUr3U2pNUw5GuvaNoPOxJXbhArq4\nbO5JlOjymaG/JiHlaegwPwNo1itjhYm8BUHA84kAXGLZIJaXeD0H+8e54zTBLcPE\nHJTQ6F4Uu2NwihGlVnQnTf/3aHsjI3HQyUcFTb+33KHPjzSEHUobzcelCwAJOuX4\nD6OYq31Hgm24msQWcQadVcNBsDa8CHN9jKeMPg9X6CQv/ORHWzPoviZ2X+j3kYXh\nIGU9MMV/0ilh1c8aKmN2ODHzJczBzpUYVrbvgqmUh6QsOXFlUIdXrQ0NgKlfV3lc\nJXuOs/Cq7Oa3MROO6S28XG47+iCnutOTa8VuWzSIOQKBgQDaPPd7YFQvUr6ak29U\nCCcEbIpKBw6SAe76wq/GjtWvQqWV3yuqrAbZV98ubT6SqBp61ZzdI8XFhpQ9A/SG\nbk9EUCsJw8czt3QznHzcKL+6eB9hr8r+sBsPkVDVZKfDv0u2IZ0xdgHkOREpnIcF\nmX3niPfaT3nIc3TR0+0fEpX4wwKBgQDNzhkmx6oQDvDz3Y5rFzWAICYGyf+FBByc\n5syBqxu6JIcfywDMuUX2jGUmuoyJZipgta7rsg2ubYguJCBpLT1rhZg2myD7fXqJ\nU96rjoc8AuH/o34b9AddtmQDhL0S/WnWQoa+93gWOAN8Yuk1pnv0ePM25inV01L2\nwK4gjDXfjQKBgFp7lJBOrBjC0cv8/Nd2Wdb3uY5fxqa6rn7BYWeNqQL1OvocgVpN\n4LkUObBiEuNzVyc+kb8OKd1vot55WVSzP6IvKujthxXmJgOQCiStsHB7hWdXH27h\nTRbzRPR0uynpklZ9MVNkffxFvNvnzgOAVDc/DqQw92kolXK5z0Jmzk9JAoGBAL0e\nGbCwI490G2kM/DVec3RUln0AnERgPebUk7LISMdpj53gjtCRpD/mTYEkRcZw0pph\n+eZujPHvhwdXfU0JHHq0neX38XwIl1SgdGrTo2O7BnBCjb0kJqyv0QIGtTRBGEOi\niG3tvDU2rcVcow8A+MDzcBPPtzvdYEyNTLVuAod1AoGACLffLtT4ErQsxNbWBzMD\nSbXrKOfjpIH8KoVaOKZVyRA7Xw9aZcirgKycxcQy3lTtkHuUHYzLXB+47ulxnYfa\n66GEnPurb1KUyt9SXkiGvWSMmxzEs2pQG3HI6e8z6huAWLuVsf7oWyoMB18H7LbH\nR3zX4znWnsTms0x09pY8g2M=\n-----END PRIVATE KEY-----\n",
+  "client_email": "maps-udacity@udacity-backend-project-190516.iam.gserviceaccount.com",
+  "client_id": "110027165486143242035",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/maps-udacity%40udacity-backend-project-190516.iam.gserviceaccount.com"
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The BrewSpot</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/static/beers_style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+</head>
+
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">THE BREW SPOT</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            {% if 'username' in user %}
+            <li><img src="{{user['picture']}}" style="width: 30px; margin-top: 10px;"></li>
+            <li><a href="{{url_for('gdisconnect')}}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+            {% else %}
+            <li><a href="{{url_for('showLogin')}}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Page Content -->
+<div class="main-header container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div>
+                <img src="{{beer.logo}}">
+            </div>
+            {% if 'username' in user %}
+                {% if hasBeer %}
+                    <button type="button" onclick="window.location='{{url_for('deleteBeer', beer_name = beer.name)}}'">
+                        Remove Beer From My Local
+                    </button>
+                {% else %}
+                    <button type="button" onclick="window.location='{{url_for('addBeer', beer_name = beer.name)}}'">
+                        Add Beer To My Local
+                    </button>
+                {% endif %}
+            {% endif %}
+        </div>
+        <div class="col-sm-6">
+            <h3>Beer Desription:</h3>
+            <ul>
+                <li>Origin: {{beer.origin}}</li>
+                <li>Price: {{beer.price}}</li>
+                <li>Description: {{beer.description}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="container main-container media-group">
+    <div class="row">
+        <h3>The Locals</h3>
+    </div>
+    <div class="text-center media-list">
+        <div class="icon arrow-icon">keyboard_arrow_left</div>
+        <div class="icon arrow-icon right">keyboard_arrow_right</div>
+        <div class="row">
+            {% for local in locals %}
+            <div class="col-xs-6 col-sm-5 col-md-3 col-lg-2 media-tile text-center" style="background: white">
+                <a href="{{url_for('showLocal', local_name = local.name)}}">
+                    <img src="https://cdn2.iconfinder.com/data/icons/life-moments/404/draft-512.png">
+                </a>
+                <p>{{local.name}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

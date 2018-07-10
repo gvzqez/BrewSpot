@@ -1,0 +1,158 @@
+body {
+    background: #fff;
+    font-family: 'Varela Round', sans-serif;
+    }
+
+.main-header {
+    text-align: center;
+    padding: 30px;
+    padding-top: 0;
+    height: 450px;
+    background: #fff;
+    width: 100%;
+    background-size: cover;
+    }
+
+.main-header h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: #fff;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    }
+
+.main-header img {
+    width: 250px;
+    height: auto;
+    margin-top: 100px;
+}
+
+.main-header h3 {
+    margin-top: 200px;
+}
+
+.main-header ul {
+    text-center: left;
+    list-style-type: none;
+}
+
+.main-container {
+    background: #e4c753;
+    min-height: 250px;
+    margin-top: 20px;
+    text-align: center;
+    }
+
+#footer {
+    position: absolute;
+    bottom: 30px;
+    margin-bottom: -30px;
+    margin-top: 100px;
+    width: 100%;
+    padding-bottom: 31px;
+    }
+
+.media-tile {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    }
+
+.media-tile img {
+    width: 100px;
+    height: 100px;
+}
+
+.media-list img {
+    width: 100px;
+    height: 100px;
+}
+
+.media-group .row {
+    margin-top: 50px;
+}
+
+.media-tile:hover {
+    background-color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 15px;
+    }
+
+main-header .row {
+    margin-top: 100px;
+}
+
+.icon {
+    font-family: 'Material Icons';
+    color: #000;
+    }
+
+.arrow-icon {
+    position: absolute;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    top: calc(50% - 20px);
+    font-size: 40px;
+    line-height: 40px;
+    }
+
+.arrow-icon.right {
+    left: auto;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    top: calc(50% - 20px);
+    font-size: 40px;
+    }
+
+.navbar {
+    background: #000;
+    height; 500px;
+    margin-bottom: 0px;
+    }
+
+.navbar-inverse {
+    border-color: #000;
+}
+
+.navbar-brand {
+    color: #e4c753;
+}
+
+.navbar-nav {
+    color: #e4c753;
+}
+
+.media-group .row {
+    overflow-x: auto;
+    white-space: nowrap;
+    }
+
+.media-group .row > .col-xs-6 {
+    display: inline-block;
+    float: none;
+    }
+
+.media-group hr {
+    border-top: 2px solid white;
+    margin-bottom: 40px;
+    }
+
+.media-group h3 {
+    font-weight: bold;
+    font-size:  36px;
+    color: #000;
+    }
+
+.media-list {
+    position: relative;
+    margin-top: 20px;
+    }
+
+button {
+    margin-top: 50px;
+}
+
